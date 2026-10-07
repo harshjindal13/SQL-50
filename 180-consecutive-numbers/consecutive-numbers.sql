@@ -6,6 +6,6 @@ with cte as (
     from Logs
 )
 
-SELECT distinct num AS ConsecutiveNums FROM cte WHERE (num = num1) AND (num = num2)
+SELECT DISTINCT num AS ConsecutiveNums FROM cte WHERE (num = num1) AND (num = num2)
 
 -- LEAD() ka matlab hai "aage wali row ka value dikhao", aur OVER(ORDER BY...) SQL ko batata hai rows ko kis order mein dekhna hai.
